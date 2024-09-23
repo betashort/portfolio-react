@@ -1,5 +1,12 @@
+# 構築
+1. [プロジェクトを作成する](#プロジェクトを作成する)
+2. [react-router-dom](#react-router-dom)
+3. [tailwindをインストールする](#tailwindをインストールする)
+4. [MUIのインストール](#muiのインストール)
+
 ## プロジェクトを作成する
-```
+
+```bash
 npx create-react-app . --template typescript
 ```
 
@@ -7,7 +14,7 @@ npx create-react-app . --template typescript
 
 * https://www.npmjs.com/package/react-router-dom
 
-```
+```bash
 npm i react-router-dom
 ```
 
@@ -15,11 +22,16 @@ npm i react-router-dom
 
 * https://tailwindcss.com/docs/guides/create-react-app
 
-```
+1. tailwind cssのインストールと初期化
+
+```bash
 npm i -D tailwindcss
 npx tailwindcss init
 ```
-```
+
+2. tailwind.config.jsの編集
+
+```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -32,8 +44,16 @@ module.exports = {
 }
 ```
 
+3. index.cssの編集
+
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
+
+## MUIのインストール
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
