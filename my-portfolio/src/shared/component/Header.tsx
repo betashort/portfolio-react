@@ -16,14 +16,22 @@ function Header() {
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-
+  interface IPageUrl {
+    url: string;
+    title: string;
+  };
+  const pageUrls:IPageUrl[] = [
+    {title: "Profile", url: "/profile"},
+    {title: "Art Gallary", url: "/art-gallary"},
+    {title: "Contact", url: "/contact"}
+  ]
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
+        {pageUrls.map((pageUrl) => (
+          <ListItem key={pageUrl.title} disablePadding>
+            <ListItemButton component={Link} to={pageUrl.url}>
+              <ListItemText primary={pageUrl.title} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -51,7 +59,7 @@ function Header() {
               >
                 <MenuIcon />
               </button>
-              <Drawer open={open} onClose={toggleDrawer(false)}>
+              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
               </Drawer>
             </div>
