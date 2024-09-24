@@ -6,6 +6,8 @@ import Footer from "./shared/component/Footer";
 import ArtGallary from "./pages/ArtGallary";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/art-gallary" element={<ArtGallary />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       <Footer />

@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "rm": "rm -rf docs",
-    "mv": "mv build docs",
+    "mv": "mv build ../docs",
     "deploy": "npm run rm && npm run build && npm run mv"
   },
   "eslintConfig": {
