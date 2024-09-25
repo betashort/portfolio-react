@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="w-full">
+      <div className="w-full h-svh">
           <Routes>
-            <Route path="/" element={<Profile/>}/>
+            <Route path="/portfolio-react" element={<Profile/>}/>
             <Route path="/profile" element={<Profile />} />
             <Route path="/art-gallary" element={<ArtGallary />} />
             <Route path="/contact" element={<Contact />} />
