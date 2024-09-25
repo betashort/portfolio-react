@@ -21,9 +21,9 @@ function Header() {
     title: string;
   };
   const pageUrls:IPageUrl[] = [
-    {title: "Profile", url: "/profile"},
-    {title: "Art Gallary", url: "/art-gallary"},
-    {title: "Contact", url: "/contact"}
+    {title: "Profile", url: "/portfolio-react/profile"},
+    {title: "Art Gallary", url: "/portfolio-react/art-gallary"},
+    {title: "Contact", url: "/portfolio-react/contact"}
   ]
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
@@ -66,19 +66,19 @@ function Header() {
             {/* !-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
             <div className="hidden -mx-4 lg:flex lg:items-center">
               <Link
-                to="/profile"
+                to="/portfolio-react/profile"
                 className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400"
               >
                 PortFolio
               </Link>
               <Link
-                to="/art-gallary"
+                to="/portfolio-react/art-gallary"
                 className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400"
               >
                 Art Gallary
               </Link>
               <Link
-                to="/contact"
+                to="/portfolio-react/contact"
                 className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400"
               >
                 Contact
