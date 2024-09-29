@@ -3,7 +3,7 @@ import profileImage from "../assets/images/betashort-icon.png";
 import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ProfileSkillCard from "../shared/component/ProfileSkillCard";
-import { profileSkillProgrammingDetails } from "../shared/const/ProfieSkillDetial";
+import { profileSkillProgrammingDetails } from "../assets/data/ProfieSkillDetial";
 
 
 function Profile() {

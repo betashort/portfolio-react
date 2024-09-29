@@ -1,5 +1,5 @@
 import { Description } from "@mui/icons-material";
-import { IProfileSkillDetail } from "../interface/ProfileSkillDetail";
+import { IProfileSkillDetail } from "../../shared/interface/ProfileSkillDetail";
 
 export const profileSkillProgrammingDetails:IProfileSkillDetail[] = [
     {

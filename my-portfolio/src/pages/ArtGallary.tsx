@@ -12,7 +12,7 @@ import blogImage from "../assets/images/blog-image.png";
 function ArtGallary() {
   return (
     <>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="w-full h-svh grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div>
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
@@ -61,6 +61,7 @@ function ArtGallary() {
               </Typography>
             </CardContent>
           </CardActionArea>
+
           <CardActions>
             <Button
               size="small"

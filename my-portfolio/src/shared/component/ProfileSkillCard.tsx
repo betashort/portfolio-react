@@ -3,7 +3,8 @@ import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { IProfileSkillDetail } from "../interface/ProfileSkillDetail";
 
-function ProfileSkillCard( profileSkillDetails:IProfileSkillDetail[]) {
+function ProfileSkillCard( props: {profileSkillDetails:IProfileSkillDetail[]}) {
+  const {profileSkillDetails} = props;
   return (
     <>
       {profileSkillDetails.map((profileSkillDetail: IProfileSkillDetail) => {
@@ -17,17 +18,7 @@ function ProfileSkillCard( profileSkillDetails:IProfileSkillDetail[]) {
               >
                 {profileSkillDetail.skill}
               </AccordionSummary>
-              <AccordionDetails>データ解析で使用</AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1-content"
-                id="panel1-header"
-              >
-                {profileSkillDetail.description}
-              </AccordionSummary>
-              <AccordionDetails>React Angularで使用</AccordionDetails>
+              <AccordionDetails>{profileSkillDetail.description}</AccordionDetails>
             </Accordion>
           </>
         );
