@@ -19,12 +19,12 @@ function Header() {
   interface IPageUrl {
     url: string;
     title: string;
-  };
-  const pageUrls:IPageUrl[] = [
-    {title: "Profile", url: "/portfolio-react/profile"},
-    {title: "Art Gallary", url: "/portfolio-react/art-gallary"},
-    {title: "Contact", url: "/portfolio-react/contact"}
-  ]
+  }
+  const pageUrls: IPageUrl[] = [
+    { title: "Profile", url: "/portfolio-react/profile" },
+    { title: "Art Gallary", url: "/portfolio-react/art-gallary" },
+    { title: "Contact", url: "/portfolio-react/contact" },
+  ];
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
@@ -44,7 +44,10 @@ function Header() {
       <nav className="w-full h-14 bg-gray-900">
         <div className="flex items-center justify-between  bg-gray-900 max-w-5xl h-full mx-auto">
           <div className="flex items-center pl-4">
-            <Link to="/portfolio-react" className="text-xl font-bold text-gray-200">
+            <Link
+              to="/portfolio-react"
+              className="text-xl font-bold text-gray-200"
+            >
               βshort ポートフォリオ
             </Link>
           </div>
