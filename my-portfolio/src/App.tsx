@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="w-full h-lvw">
+      <div className="w-full">
           <Routes>
             <Route path="/portfolio-react" element={<Profile/>}/>
             <Route path="/portfolio-react/profile" element={<Profile />} />
