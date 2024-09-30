@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.1277ce85.css",
-    "main.js": "/portfolio-react/static/js/main.f0b0c83f.js",
+    "main.js": "/portfolio-react/static/js/main.d0877b4b.js",
     "static/js/206.2d0e8fc0.chunk.js": "/portfolio-react/static/js/206.2d0e8fc0.chunk.js",
     "static/media/sleep.png": "/portfolio-react/static/media/sleep.b4d7d968829b82b8647c.png",
     "static/media/betashort-icon.png": "/portfolio-react/static/media/betashort-icon.a207e28e49d748f4e43f.png",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.1277ce85.css",
-    "static/js/main.f0b0c83f.js"
+    "static/js/main.d0877b4b.js"
   ]
 }
