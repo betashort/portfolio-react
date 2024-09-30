@@ -91,7 +91,7 @@ function ArtGallary() {
                   睡眠記録アプリ
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  睡眠時間を日記形式で管理するあぷりです。
+                  睡眠時間を日記形式で管理するアプリです。
                   作成中です。
                 </Typography>
               </CardContent>
@@ -101,7 +101,7 @@ function ArtGallary() {
               <Button
                 size="small"
                 color="primary"
-                href="https://betashort.github.io/react_demo/"
+                href="https://betashort.github.io/sleep-check-app"
               >
                 Move
               </Button>
