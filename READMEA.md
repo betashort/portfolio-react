@@ -63,3 +63,10 @@ npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
 * https://mui.com/material-ui/react-drawer/
 
+```bash
+npm i axios
+```
+
+```bash
+npm install @fullcalendar/react @fullcalendar/core @fullcalendar/daygrid
+```
