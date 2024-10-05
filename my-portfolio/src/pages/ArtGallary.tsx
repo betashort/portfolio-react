@@ -77,7 +77,7 @@ function ArtGallary() {
             </CardActions>
           </Card>
         </div>
-        <div className="m-4">
+        <div className="slee-check-app m-4">
           <Card sx={{ maxWidth: 400, height: 400}}>
             <CardActionArea>
               <CardMedia
@@ -101,14 +101,14 @@ function ArtGallary() {
               <Button
                 size="small"
                 color="primary"
-                href="https://betashort.github.io/sleep-check-app"
+                href="https://sleep-check-app.betashort-lab.com/"
               >
                 Move
               </Button>
             </CardActions>
           </Card>
         </div>
-        <div className="m-4">
+        <div className="mental-health-app m-4">
           <Card sx={{ maxWidth: 400, height: 400}}>
             <CardActionArea>
               <CardMedia
@@ -132,7 +132,7 @@ function ArtGallary() {
               <Button
                 size="small"
                 color="primary"
-                href="https://betashort.github.io/mental-health-diary-app/"
+                href="https://mhd-app.betashort-lab.com"
               >
                 Move
               </Button>
