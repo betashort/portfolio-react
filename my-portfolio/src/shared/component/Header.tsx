@@ -39,7 +39,7 @@ function Header() {
         <div className="flex items-center justify-between  bg-gray-900 max-w-5xl h-full mx-auto">
           <div className="flex items-center pl-4">
             <Link
-              to="/portfolio-react"
+              to="/"
               className="text-xl font-bold text-gray-200"
             >
               βshort ポートフォリオ

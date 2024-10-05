@@ -15,10 +15,10 @@ function App() {
       <Header />
       <div className="w-full">
           <Routes>
-            <Route path="/portfolio-react" element={<Profile/>}/>
-            <Route path="/portfolio-react/profile" element={<Profile />} />
-            <Route path="/portfolio-react/art-gallary" element={<ArtGallary />} />
-            <Route path="/portfolio-react/contact" element={<Contact />} />
+            <Route path="/" element={<Profile/>}/>
+            <Route path="profile" element={<Profile />} />
+            <Route path="art-gallary" element={<ArtGallary />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

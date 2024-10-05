@@ -12,11 +12,12 @@ import blogImage from "../assets/images/blog-image.png";
 import portfolioImage from "../assets/images/portfolio-react.png";
 import sleepAppImage from "../assets/images/sleep.png";
 import MHDAppImage from "../assets/images/MHD-image.png"
+import RokDashboardImage from "../assets/images/ROK-image.jpg"
 
 function ArtGallary() {
   return (
     <>
-      <div className="w-full h-svh grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="w-full h-svh grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xg:grid-cols-4">
         <div className="m-4">
           <Card sx={{ maxWidth: 400, height: 400 }}>
             <CardActionArea>
@@ -41,36 +42,6 @@ function ArtGallary() {
                 size="small"
                 color="primary"
                 href="https://betashort-lab.com/"
-              >
-                Move
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="m-4">
-          <Card sx={{ maxWidth: 400, height: 400 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                alt="green iguana"
-                src={portfolioImage}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  【練習用】Reactデモアプリ
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  reactの勉強のため、練習問題程度のアプリケーションを作成しています。
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="https://betashort.github.io/react_demo/"
               >
                 Move
               </Button>
@@ -133,6 +104,68 @@ function ArtGallary() {
                 size="small"
                 color="primary"
                 href="https://mhd-app.betashort-lab.com"
+              >
+                Move
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="rok-app m-4">
+          <Card sx={{ maxWidth: 400, height: 400}}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                alt="green iguana"
+                src={RokDashboardImage}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  RoK戦力管理アプリ
+                </Typography>
+                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                  Rise of Kingdoms(RoK)というスマホゲームで活用するアプリです。
+                  ＊作成中です。
+                  使用技術は、フロントエンド:Angular、バックエンド:Django Rest Frameworkです。
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://rok-app.betashort-lab.com/"
+              >
+                Move
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="react-demo m-4">
+          <Card sx={{ maxWidth: 400, height: 400 }}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                alt="green iguana"
+                src={portfolioImage}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  【練習用】Reactデモアプリ
+                </Typography>
+                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                  reactの勉強のため、練習問題程度のアプリケーションを作成しています。
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://betashort.github.io/react_demo/"
               >
                 Move
               </Button>
